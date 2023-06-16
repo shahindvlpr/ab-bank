@@ -24,35 +24,35 @@
                 <div class="col-md-4">
                     <div class="status deposit">
                         <h5>Deposit</h5>
-                        <h2>$00</h2>
+                        <h2>$<span id="currentDeposit">00</span></h2>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="status withdraw">
                         <h5>Withdraw</h5>
-                        <h2>$00</h2>
+                        <h2>$<span id="currentWithdraw">00</span></h2>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="status balance">
                         <h5>Balance</h5>
-                        <h2>$1500</h2>
+                        <h2>$<span id="currentBalance">1500</span></h2>
                     </div>
                 </div>
             </div>
-            <div class="row">
+            <div class="row"35>
                 <div class="col-md-6">
                     <div class="dw-content">
                         <h4>Deposit</h4>
-                        <input type="text" name="deposit" id="withdraw" class="form-control" placeholder="$ amount you want to deposit">
+                        <input id="depositAmount" type="text" name="deposit" id="withdraw" class="form-control" placeholder="$ amount you want to deposit">
                         <button type="submit" class="btn btn-success" id="depositbutton">Deposit</button>
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="dw-content">
                         <h4>Withdraw</h4>
-                        <input type="text" name="withdraw" id="withdraw" class="form-control" placeholder="$ amount you want to withdraw">
-                        <button type="submit" class="btn btn-success">Withdraw</button>
+                        <input id="withdrawAmount" type="text" name="withdraw" id="withdraw" class="form-control" placeholder="$ amount you want to withdraw">
+                        <button id="withdrawBtn" type="submit" class="btn btn-success">Withdraw</button>
                     </div>
                 </div>
             </div>
