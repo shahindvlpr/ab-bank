@@ -1,0 +1,47 @@
+body{
+    padding: 100px;
+}
+/* input:focus{
+    outline: none !important;
+} */
+.log-in-content-area{
+    margin-top: 50px;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px lightgray;
+}
+.log-in-content-area h3 {
+    margin-bottom: 15px;
+}
+#transaction-area{
+    display: none;
+}
+.deposit{
+    background-color: #5E4EC5;
+}
+.withdraw{
+    background-color: #EF956E;
+}
+.balance{
+    background-color: #EE9A00;
+}
+.status{
+    margin: 0 20px;
+    color: #fff;
+    padding: 25px;
+    border-radius: 10px;
+}
+.dw-content{
+    margin: 0 20px;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px lightgray;
+    margin-top: 80px;
+}
+.dw-content h4 {
+    margin-bottom: 15px;
+}
+
+.dw-content button.btn {
+    margin-top: 15px;
+}

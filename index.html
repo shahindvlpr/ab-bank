@@ -9,6 +9,55 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Ab-Bank</h1>
+    <section class="log-in">
+        <div id="loginArea" class="log-in-area">
+            <h1 class="text-center">Welcome to AB Bank</h1>
+            <div class="log-in-content-area">
+                <h3>Login</h3>
+                <input type="email" name="email" id="email" placeholder="Email" class="form-control" required><br>
+                <input type="password" name="password" id="password" class="form-control" placeholder="Password" required><br>
+                <button id="login" class="btn btn-success" type="submit">Enter</button>
+            </div>
+        </div>
+        <div id="transaction-area">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="status deposit">
+                        <h5>Deposit</h5>
+                        <h2>$00</h2>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="status withdraw">
+                        <h5>Withdraw</h5>
+                        <h2>$00</h2>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="status balance">
+                        <h5>Balance</h5>
+                        <h2>$1500</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="dw-content">
+                        <h4>Deposit</h4>
+                        <input type="text" name="deposit" id="withdraw" class="form-control" placeholder="$ amount you want to deposit">
+                        <button type="submit" class="btn btn-success" id="depositbutton">Deposit</button>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="dw-content">
+                        <h4>Withdraw</h4>
+                        <input type="text" name="withdraw" id="withdraw" class="form-control" placeholder="$ amount you want to withdraw">
+                        <button type="submit" class="btn btn-success">Withdraw</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="main.js"></script>
 </body>
 </html>
