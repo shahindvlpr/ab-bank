@@ -14,10 +14,14 @@
             <h1 class="text-center">Welcome to AB Bank</h1>
             <div class="log-in-content-area">
                 <h3>Login</h3>
+                <form id="loginForm"></form>
                 <input type="email" name="email" id="email" placeholder="Email" class="form-control" required><br>
+                <span id="emailError" class="error"></span>
                 <input type="password" name="password" id="password" class="form-control" placeholder="Password" required><br>
-                <button id="login" class="btn btn-success" type="submit">Enter</button>
+                <span id="passwordError" class="error"></span>
+                <button id="login"  class="btn btn-success"  type="submit" >Enter</button>
             </div>
+            </form>
         </div>
         <div id="transaction-area">
             <div class="row">

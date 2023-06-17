@@ -7,12 +7,19 @@ loginBtn.addEventListener('click',function(){
     transactionArea.style.display = "block";
 })
 
+//login validation check.......
+
+  
+  
+
+  
+
 //deposit button even handler........
 const depositBtn = document.getElementById("depositbutton");
 depositBtn.addEventListener('click',function(){
     const depositNum = getInputNumber("depositAmount");
-    updateSpanTest("currentDeposit",depositNum);
-    updateSpanTest("currentBalance",depositNum);
+    updateSpanText("currentDeposit",depositNum);
+    updateSpanText("currentBalance",depositNum);
     document.getElementById("depositAmount").value = "";
 
 })
@@ -20,17 +27,12 @@ depositBtn.addEventListener('click',function(){
 //withdraw button even handler........
 const withdrawBtn = document.getElementById("withdrawBtn");
 withdrawBtn.addEventListener('click',function(){
-    const currentWithdraw = document.getElementById("currentWithdraw").innerText;
-    const currentWithdrawNum = parseFloat(currentWithdraw);
     const withdrawAmountNum = getInputNumber("withdrawAmount");
-    const totalCurrentWithdraw = currentWithdrawNum + withdrawAmountNum;
-    document.getElementById("currentWithdraw").innerText = totalCurrentWithdraw;
+    updateSpanText("currentWithdraw",withdrawAmountNum);
+    updateSpanText("currentBalance",-1 * withdrawAmountNum)
+
     document.getElementById("withdrawAmount").value = "";
 
-    // const currentBalanceAmount = document.getElementById("currentBalance");
-    // const currentBalanceAmountNum = parseFloat(currentBalanceAmount);
-    // const totalBalanceAmount = currentBalanceAmountNum - withdrawAmountNum;
-    // document.getElementById("currentBalance").innerText = totalBalanceAmount;
 })
 //get input for deposit and withdraw
 function getInputNumber(id){
@@ -39,7 +41,7 @@ function getInputNumber(id){
     return amountNum;
 }
 //function for update deposit,balance
-function updateSpanTest(id,depositNum){
+function updateSpanText(id,depositNum){
     const current = document.getElementById(id).innerText;
     const currentValue = parseFloat(current);
     const totalAmount = currentValue + depositNum;
